@@ -27,6 +27,11 @@ const LoginPage = () => {
   const styles = createStyles(theme);
   const navigation = useNavigation<NativeStackNavigationProp<AuthRoutes>>();
 
+  const initialValues = {
+    username: "",
+    password: "",
+  };
+
   const loginSchema = Yup.object().shape({
     username: Yup.string().min(1, "min 1 chars").required("Required"),
     password: Yup.string().min(6, "Min 6 chars").required("Required"),
@@ -73,7 +78,7 @@ const LoginPage = () => {
         <Text style={styles.subtitle}>Login to your account</Text>
 
         <Formik
-          initialValues={{ username: "", password: "" }}
+          initialValues={initialValues}
           validationSchema={loginSchema}
           onSubmit={handleLogin}
         >
