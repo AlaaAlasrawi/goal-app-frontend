@@ -6,12 +6,12 @@ A simple and elegant goal-tracking mobile application built using **React Native
 
 ## ✨ Features
 
-- 🌓 Light and dark theme toggle
+-    Light and dark theme toggle
 - ✅ Add and view personal goals
-- 📋 Clean, minimal UI with Paper components
+-    Clean, minimal UI with Paper components
 - 🎯 Built with TypeScript and functional components
-- 💅 Themed styling using custom context
-- 
+-    Themed styling using custom context
+  
 
 
 ## 📱 Screenshots
