@@ -5,7 +5,6 @@ import { Goal } from "../hooks/types";
 import UserInfoCard from "../components/dashboard/UserInfoCard";
 import RecentlyCreatedGoals from "../components/dashboard/RecentlyCreatedGoals";
 import GoalService from "../services/GoalService";
-import GoalsPieChart from "../components/dashboard/GoalsPieChart";
 
 interface props {
   refresh: number;
@@ -26,7 +25,7 @@ const DashboardPage = ({ refresh }: props) => {
 
         setGoals(Array.isArray(goalsData) ? goalsData : []);
         setCompletedGoals(
-          typeof completedGoalsCount === "number" ? completedGoalsCount : 0
+          typeof completedGoalsCount === "number" ? completedGoalsCount : 0,
         );
       } catch (e) {
         // If either call throws, fail safe
@@ -45,7 +44,7 @@ const DashboardPage = ({ refresh }: props) => {
         completedGoals={completedGoals ?? 0}
         streaks={3}
       />
-      <GoalsPieChart completed={completedGoals} total={goals.length} />
+      {/* <GoalsPieChart completed={completedGoals} total={goals.length} /> */}
       <RecentlyCreatedGoals goals={goals} />
     </ScrollView>
   );
