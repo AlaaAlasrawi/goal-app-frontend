@@ -1,16 +1,16 @@
 {
   "expo": {
     "name": "my-app",
-    "slug": "my-app",
+    "slug": "slug-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/logo.svg",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#a1c7c9"
     },
     "ios": {
       "supportsTablet": true
@@ -25,9 +25,6 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "plugins": [
-      "@react-native-community/datetimepicker",
-      "expo-font"
-    ]
+    "plugins": ["@react-native-community/datetimepicker", "expo-font"]
   }
 }
