@@ -1,6 +1,13 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "strict": true
+    "strict": true //stricter type checking
   }
 }
+// controls TypeScript behavior, compiler rules, path aliases
+// it is basically the TypeScript project rules/config.
+
+//              tsconfig.json vs babel.config.js
+
+//   tsconfig.json = TypeScript checks/types/compiler options
+//   babel.config.js = how code is transformed into JavaScript that can run
